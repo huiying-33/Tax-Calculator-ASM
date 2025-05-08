@@ -7,6 +7,7 @@ all_users = []
 
 
 def verify_user(ic_number, password):
+    """ verify user IC number and password"""
     if len(ic_number) != 12 or not ic_number.isdigit():
         print("Invalid IC number. It must be 12 digits.")
         return False
